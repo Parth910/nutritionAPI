@@ -244,7 +244,7 @@ const PORT = process.env.PORT || 5000;
     }
         res.send(meal);
 })
-server.listen(PORT,()=>console.log(`server at ${PORT}`)
+app.listen(process.env.PORT || 3000,()=>console.log(`server at ${PORT}`)
 );
 
 
