@@ -227,7 +227,8 @@ const PORT = process.env.PORT || 5000;
                 if(m.minAge<= age && m.maxAge >= age && m.gender=== gender)
                 return m;
             })
-            console.log(calorieNeed);
+            //console.log(calorieNeed);
+    if(meatT){
     var meal ={
         "calorie":Math.floor( (randomIntFromInterval(meatT[0].minCalories,meatT[0].maxCalories))/3),
         "protienItem":nonVegPro[randomIntFromInterval(0,3)].name,
@@ -241,6 +242,7 @@ const PORT = process.env.PORT || 5000;
         "dairyItem":dairy[randomIntFromInterval(0,2)].name,
         "dairyQun":meatT[0].Dairy,
 
+    }
     }
         res.send(meal);
 })
